@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Interactive Page</h1>
+
+  <!-- Light / Dark mode toggle -->
+  <button id="toggleMode">Switch Light/Dark Mode</button>
+
+  <!-- Counter game -->
+  <div>
+    <p>Counter: <span id="counterValue">0</span></p>
+    <button id="increaseBtn">Increase</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <!-- Simple FAQ (collapsible) -->
+  <div>
+    <h3 id="faqHeader">What is JavaScript?</h3>
+    <p id="faqAnswer" style="display:none;">JavaScript makes web pages interactive.</p>
+  </div>
+
+  <!-- Form for validation -->
+  <form id="myForm">
+    <label>Name: <input type="text" id="name"></label><br>
+    <label>Email: <input type="text" id="email"></label><br>
+    <label>Password: <input type="password" id="password"></label><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Error / success messages -->
+  <div id="formMessages"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
